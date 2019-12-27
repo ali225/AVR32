@@ -13,7 +13,7 @@
 
 int main() {
 
-	initLed(LED1);
+	initLed(LED1); 
 	while (1) {
 
 		_delay_ms(1000);
