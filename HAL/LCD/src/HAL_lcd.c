@@ -92,7 +92,7 @@ stdReturnType_t LCD_init(void)
 
 	/* Configure the control pins(E,RS,RW) as output pins */
 	retStatus =  DIO_init(LCD_CTRL_LINES_PORT, LCD_E_PIN, OUTPUT);
-	retStatus |= DI_init(LCD_CTRL_LINES_PORT, LCD_RS_PIN, OUTPUT);
+	retStatus |= DIO_init(LCD_CTRL_LINES_PORT, LCD_RS_PIN, OUTPUT);
 	retStatus |= DIO_init(LCD_CTRL_LINES_PORT, LCD_RW_PIN, OUTPUT);
 
 	/* Configure the highest 4 data lines as output */
@@ -259,4 +259,3 @@ stdReturnType_t LCD_displayCustomChar(u8 index,u8 row,u8 col)
 
 	return retStatus;
 }
-
