@@ -22,6 +22,8 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 HAL/BUTTON/src \
+HAL/KEYPAD/src \
+HAL/LCD/src \
 HAL/LED/src \
 HAL/seven/src \
 MCAL/DIO/src \

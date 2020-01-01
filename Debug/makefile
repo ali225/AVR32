@@ -11,6 +11,8 @@ RM := rm -rf
 -include MCAL/DIO/src/subdir.mk
 -include HAL/seven/src/subdir.mk
 -include HAL/LED/src/subdir.mk
+-include HAL/LCD/src/subdir.mk
+-include HAL/KEYPAD/src/subdir.mk
 -include HAL/BUTTON/src/subdir.mk
 -include subdir.mk
 -include objects.mk
