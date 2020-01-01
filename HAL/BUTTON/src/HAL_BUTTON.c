@@ -58,51 +58,7 @@ stdReturnType_t getButtonState(buttonX_t buttonID, buttonState_t * pbuttonState)
 	stdReturnType_t retStatus = ERROR;
 	pinState_t pinState;
 
-	//Read button pin state
-
-	switch(buttonID){
-
-	case BUTTON0:
-		retStatus = DIO_read(BUTTON0_PORT,BUTTON0,&pinState);
-		if(PIN_IS_HIGH == pinState){
-			_delay_ms(30);
-			retStatus = DIO_read(BUTTON0_PORT,BUTTON0,&pinState);
-		}else{
-			// Do nothing
-		}
-		break;
-	case BUTTON1:
-		retStatus = DIO_read(BUTTON1_PORT,BUTTON1,&pinState);
-		if(PIN_IS_HIGH == pinState)
-		{
-			_delay_ms(30);
-			retStatus = DIO_read(BUTTON1_PORT,BUTTON1,&pinState);
-		}else{
-
-		}
-		break;
-	default:
-		retStatus = ERROR;
-		break;
-	}
-	if ((SUCCESS == retStatus) && (PIN_IS_HIGH == pinState) )
-	{
-		*pbuttonState = BUTTON_PRESSED;
-		retStatus = SUCCESS;
-	}else if ((SUCCESS == retStatus)&&(PIN_IS_LOW == pinState))
-	{
-		*pbuttonState = BUTTON_NOT_PRESSED;
-		retStatus = SUCCESS;
-	}
-	else{
-		retStatus = ERROR;
-	}
-	return retStatus;
-}
-/*	stdReturnType_t retStatus = ERROR;
-	pinState_t pinState;
-
-	 Read button pin state
+	/* Read button pin state */
 	switch(buttonID)
 	{
 		case BUTTON0:
@@ -115,7 +71,7 @@ stdReturnType_t getButtonState(buttonX_t buttonID, buttonState_t * pbuttonState)
 			}
 			else
 			{
-				 Do nothing
+				/* Do nothing */
 			}
 
 			break;
@@ -129,7 +85,7 @@ stdReturnType_t getButtonState(buttonX_t buttonID, buttonState_t * pbuttonState)
 			}
 			else
 			{
-				 Do nothing
+				/* Do nothing */
 			}
 			break;
 
@@ -142,17 +98,17 @@ stdReturnType_t getButtonState(buttonX_t buttonID, buttonState_t * pbuttonState)
 			}
 			else
 			{
-				 Do nothing
+				/* Do nothing */
 			}
 			break;
 
 		default:
-			 ERROR given buttonID is not supported
+			/* ERROR given buttonID is not supported */
 			retStatus = ERROR;
 			break;
 	}
 
-	 Check button state
+	/* Check button state */
 	if( (SUCCESS == retStatus) && (PIN_IS_HIGH == pinState))
 	{
 		*pbuttonState = BUTTON_PRESSED;
@@ -170,4 +126,4 @@ stdReturnType_t getButtonState(buttonX_t buttonID, buttonState_t * pbuttonState)
 
 	return retStatus;
 
-}*/
+}
