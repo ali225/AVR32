@@ -4,26 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-<<<<<<< HEAD
 ../main_Seven.c \
-=======
->>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
 ../maintest.c \
 ../maintestled.c 
 
 OBJS += \
-<<<<<<< HEAD
 ./main_Seven.o \
-=======
->>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
 ./maintest.o \
 ./maintestled.o 
 
 C_DEPS += \
-<<<<<<< HEAD
 ./main_Seven.d \
-=======
->>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
 ./maintest.d \
 ./maintestled.d 
 

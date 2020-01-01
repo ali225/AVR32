@@ -1,9 +1,10 @@
 /*
- * maintestled.c
+ * LED_main.c
  *
  *  Created on: Jan 1, 2020
  *      Author: Eng Ali Gamal
  */
+
 
 #include <avr/io.h>
 #include "util/delay.h"
@@ -14,7 +15,7 @@
 #include "HAL/seven/inc/HAL_Seven.h"
 
 /*// Challenge2
-int main(void) {
+ main(void) {
 	// Declaration and initial variable using counter
     int num = 0;
 	// Declaration pointer using Button
@@ -58,10 +59,8 @@ int main(void) {
 }*/
 // Challenge
 
-<<<<<<< HEAD
+
 /*
-=======
->>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
 int main(void)
 {
 	DDRD  = 0xFF;	// Configure all PORTD pins as output pins
@@ -74,18 +73,13 @@ int main(void)
 		PORTD = (PORTD<<1); //every time only one led is ON
 		if(PORTD == 0x00)
 		{
-<<<<<<< HEAD
+
 			 In case PORTC equals ZERO after 8 shifts
-			 * turn on the first led to start rolling again
-=======
-			/* In case PORTC equals ZERO after 8 shifts
-			 * turn on the first led to start rolling again */
->>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
-			PORTD = 0x01;
+
+	PORTD = 0x01;
 		}
 	}
 }
-<<<<<<< HEAD
 */
 
 
@@ -398,3 +392,5 @@ int main(void)
     }
 }
 */
+
+
