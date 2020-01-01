@@ -58,7 +58,10 @@ int main(void) {
 }*/
 // Challenge
 
+<<<<<<< HEAD
 /*
+=======
+>>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
 int main(void)
 {
 	DDRD  = 0xFF;	// Configure all PORTD pins as output pins
@@ -71,16 +74,27 @@ int main(void)
 		PORTD = (PORTD<<1); //every time only one led is ON
 		if(PORTD == 0x00)
 		{
+<<<<<<< HEAD
 			 In case PORTC equals ZERO after 8 shifts
 			 * turn on the first led to start rolling again
+=======
+			/* In case PORTC equals ZERO after 8 shifts
+			 * turn on the first led to start rolling again */
+>>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
 			PORTD = 0x01;
 		}
 	}
 }
+<<<<<<< HEAD
 */
 
 
 /* main() {
+=======
+
+
+/*int main() {
+>>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
  initSevenSegment(SEVEN_SEGMENT0);
  controlSevenSegment(SEVEN_SEGMENT0, SEGMENT_ENABLED);
  u8 num = 0;

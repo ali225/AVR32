@@ -154,7 +154,11 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .rela.plt
  *(.rela.plt)
 
+<<<<<<< HEAD
 .text           0x00000000     0x2cca
+=======
+.text           0x00000000     0x2cc4
+>>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
  *(.vectors)
  .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -357,6 +361,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  .text.getButtonState
                 0x000026d2      0x3ca ./HAL/BUTTON/src/HAL_BUTTON.o
                 0x000026d2                getButtonState
+<<<<<<< HEAD
  .text.main     0x00002a9c      0x132 ./main_Seven.o
                 0x00002a9c                main
  .text.libgcc   0x00002bce        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
@@ -378,6 +383,29 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  .fini9         0x00002cc6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
                 0x00002cc6                exit
                 0x00002cc6                _exit
+=======
+ .text.main     0x00002a9c      0x12c ./maintestled.o
+                0x00002a9c                main
+ .text.libgcc   0x00002bc8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00002bc8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00002bc8       0x38 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00002bc8                __prologue_saves__
+ .text.libgcc   0x00002c00       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00002c00                __epilogue_restores__
+ .text.avr-libc
+                0x00002c36       0x42 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
+                0x00002c36                itoa
+ .text.avr-libc
+                0x00002c78       0x20 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x00002c78                strrev
+ .text.libgcc   0x00002c98       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00002c98                __udivmodhi4
+                0x00002cc0                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002cc0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002cc0                exit
+                0x00002cc0                _exit
+>>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -396,11 +424,19 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
+<<<<<<< HEAD
  .fini0         0x00002cc6        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
                 0x00002cca                _etext = .
 
 .data           0x00800060        0xc load address 0x00002cca
+=======
+ .fini0         0x00002cc0        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002cc4                _etext = .
+
+.data           0x00800060        0xc load address 0x00002cc4
+>>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -451,7 +487,10 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  .bss           0x0080006c        0x0 ./HAL/LCD/src/HAL_lcd.o
  .bss           0x0080006c        0x0 ./HAL/KEYPAD/src/HAL_KEYPAD.o
  .bss           0x0080006c        0x0 ./HAL/BUTTON/src/HAL_BUTTON.o
+<<<<<<< HEAD
  .bss           0x0080006c        0x0 ./main_Seven.o
+=======
+>>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
  .bss           0x0080006c        0x0 ./maintest.o
  .bss           0x0080006c        0x0 ./maintestled.o
  .bss           0x0080006c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
@@ -475,8 +514,13 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  *(.bss*)
  *(COMMON)
                 0x0080006c                PROVIDE (__bss_end, .)
+<<<<<<< HEAD
                 0x00002cca                __data_load_start = LOADADDR (.data)
                 0x00002cd6                __data_load_end = (__data_load_start + SIZEOF (.data))
+=======
+                0x00002cc4                __data_load_start = LOADADDR (.data)
+                0x00002cd0                __data_load_end = (__data_load_start + SIZEOF (.data))
+>>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
 
 .noinit         0x0080006c        0x0
                 0x0080006c                PROVIDE (__noinit_start, .)
@@ -501,7 +545,11 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .signature
  *(.signature*)
 
+<<<<<<< HEAD
 .stab           0x00000000     0x34ec
+=======
+.stab           0x00000000     0x336c
+>>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
  *(.stab)
  .stab          0x00000000      0x75c ./MCAL/DIO/src/DIO.o
  .stab          0x0000075c      0x7e0 ./HAL/seven/src/HAL_seven.o
@@ -514,6 +562,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                                 0x648 (size before relaxing)
  .stab          0x00002874      0x684 ./HAL/BUTTON/src/HAL_BUTTON.o
                                 0x81c (size before relaxing)
+<<<<<<< HEAD
  .stab          0x00002ef8      0x3b4 ./main_Seven.o
                                 0x54c (size before relaxing)
  .stab          0x000032ac       0xd8 ./maintest.o
@@ -524,6 +573,16 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .stabstr        0x00000000     0x1c21
  *(.stabstr)
  .stabstr       0x00000000     0x1c21 ./MCAL/DIO/src/DIO.o
+=======
+ .stab          0x00002ef8       0xd8 ./maintest.o
+                                 0xe4 (size before relaxing)
+ .stab          0x00002fd0      0x39c ./maintestled.o
+                                0x528 (size before relaxing)
+
+.stabstr        0x00000000     0x1d59
+ *(.stabstr)
+ .stabstr       0x00000000     0x1d59 ./MCAL/DIO/src/DIO.o
+>>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
 
 .stab.excl
  *(.stab.excl)
