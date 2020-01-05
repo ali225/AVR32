@@ -26,6 +26,8 @@ HAL/KEYPAD/src \
 HAL/LCD/src \
 HAL/LED/src \
 HAL/seven/src \
-MCAL/DIO/src \
 . \
+MCAL/DIO/src \
+MCAL/Timer \
+MCAL/interupts/src \
 

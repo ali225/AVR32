@@ -4,19 +4,25 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../main_Seven.c \
-../maintest.c \
-../maintestled.c 
+../LCD_main.c \
+../LED_main.c \
+../Seven_main.c \
+../interrupts_main.c \
+../maintest.c 
 
 OBJS += \
-./main_Seven.o \
-./maintest.o \
-./maintestled.o 
+./LCD_main.o \
+./LED_main.o \
+./Seven_main.o \
+./interrupts_main.o \
+./maintest.o 
 
 C_DEPS += \
-./main_Seven.d \
-./maintest.d \
-./maintestled.d 
+./LCD_main.d \
+./LED_main.d \
+./Seven_main.d \
+./interrupts_main.d \
+./maintest.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
