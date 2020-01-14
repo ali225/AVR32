@@ -5,6 +5,7 @@
  *      Author: Eng Ali Gamal
  */
 
+/*
 
 #include <avr/io.h>
 #include "util/delay.h"
@@ -13,6 +14,7 @@
 //#include "HAL/LED/inc/HAL_led.h"
 #include "HAL/BUTTON/inc/HAL_BUTTON.h"
 #include "HAL/seven/inc/HAL_Seven.h"
+*/
 
 /*// Challenge2
  main(void) {
@@ -87,7 +89,7 @@ int main(void)
 =======
 
 
-/*int main() {
+/* main() {
 >>>>>>> fc282a59d59a9fd5ae5bce7849b08bea8739b961
  initSevenSegment(SEVEN_SEGMENT0);
  controlSevenSegment(SEVEN_SEGMENT0, SEGMENT_ENABLED);
