@@ -27,7 +27,9 @@ HAL/LCD/src \
 HAL/LED/src \
 HAL/seven/src \
 . \
+MCAL/ADC \
 MCAL/DIO/src \
 MCAL/Timer \
+MCAL/WDG \
 MCAL/interupts/src \
 

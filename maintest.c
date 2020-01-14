@@ -6,7 +6,7 @@
  *  Created on: Nov 10, 2019
  *      Author: Eng Ali Gamal
  */
-/*#include <avr/io.h>
+#include <avr/io.h>
 #include "util/delay.h"
 #include "LIB/std_types.h"
 //#include "HAL/LED/inc/HAL_led.h"
@@ -16,7 +16,7 @@
 #define F_CPU 16000000UL //16 MHZ
 
 // Challenge2
-  main(void) {
+int  main(void) {
 	// Declaration and initial variable using counter
 	u8 num = 0;
 	// Declaration pointer using Button
@@ -52,8 +52,7 @@
 		}
 
 	}
-
-}*/
+}
 
 /*int main() {
  initSevenSegment(SEVEN_SEGMENT0);
