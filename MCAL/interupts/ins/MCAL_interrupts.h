@@ -8,7 +8,6 @@
 #ifndef MCAL_INTERUPTS_INS_MCAL_INTERRUPTS_H_
 #define MCAL_INTERUPTS_INS_MCAL_INTERRUPTS_H_
 
-
 /************* Type def section ************/
 
 /* three type interrupt  */
@@ -20,7 +19,6 @@ typedef enum
 }extIntX_t;
 
 /* four type Sensitivity interrupt  */
-
 typedef enum
 {
 	LOW_LEVEL,
@@ -34,6 +32,5 @@ extern stdReturnType_t configExternalInterruptSensitivity(extIntX_t exIntID, ext
 extern stdReturnType_t disableExternalInterrupt(extIntX_t exIntID);
 extern stdReturnType_t disableGlobalInterrupts(void);
 extern stdReturnType_t enableGlobalInterrupts(void);
-
 
 #endif /* MCAL_INTERUPTS_INS_MCAL_INTERRUPTS_H_ */
