@@ -60,4 +60,35 @@
 
 #define WDTCR   *((volatile u8*) 0x41)
 
+
+/**************** Timer 1 Registers ***************************/
+/**************************************************************/
+
+#define TCCR1A (*((volatile unsigned char *) 0x4F))
+#define TCCR1B (*((volatile unsigned char *) 0x4E))
+#define TCNT1H (*((volatile unsigned char *) 0x4D))
+#define TCNT1L (*((volatile unsigned char *) 0x4C))
+#define OCR1AH (*((volatile unsigned char *) 0x4B))
+#define OCR1AL (*((volatile unsigned char *) 0x4A))
+#define OCR1BH (*((volatile unsigned char *) 0x49))
+#define OCR1BL (*((volatile unsigned char *) 0x48))
+#define ICR1H (*((volatile unsigned char *) 0x47))
+#define ICR1L (*((volatile unsigned char *) 0x48))
+
+/**************** UART Registers *******************************/
+/**************************************************************/
+#define UDR  	*((volatile u8*) 0x2C)
+#define UCSRA   *((volatile u8*) 0x2B)
+#define UCSRB   *((volatile u8*) 0x2A)
+#define UBRRL  	*((volatile u8*) 0x29)
+#define UBRRH  	*((volatile u8*) 0x40)
+#define UCSRC   *((volatile u8*) 0x40)
+
+/************* SPI Registers ********************************/
+/**************************************************************/
+
+#define SPCR     *((volatile u8*) 0x2D)
+#define SPSR     *((volatile u8*) 0x2E)
+#define SPDR     *((volatile u8*) 0x2F)
+
 #endif
