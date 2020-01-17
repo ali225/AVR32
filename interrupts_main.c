@@ -14,7 +14,7 @@
 #include "HAL/BUTTON/inc/HAL_BUTTON.h"
 #include "MCAL/interupts/ins/MCAL_interrupts.h"
 
-u8 flag = 0;
+//u8 flag = 0;
 //u8 x;
 //u8 *pbuttonstate = &x;
 
@@ -23,7 +23,6 @@ void call_back(void) {
 	flag = 1;
 	//toogleLed(LED2);
 }
-*/
 
 /*
  main()
@@ -102,6 +101,37 @@ int main() {
 	}
 	return 0;
 
+<<<<<<< HEAD
+=======
+/*
+int main() {
+
+	stdReturnType_t status = SUCCESS;
+
+	/************** counting on a seven segment using interrupt **********/
+/*
+	status = initSevenSegment(SEVEN_SEGMENT0);
+	status |= controlSevenSegment(SEVEN_SEGMENT0, SEGMENT_ENABLED);
+	status |= initButton(BUTTON2);
+	status |= initExternalInterrupt(INT_0, RISING_EDGE, call_back);
+
+	int count = 0;
+	while (1) {
+		if (flag == 1) {
+			count++;
+			_delay_ms(60);
+			flag = 0;
+			if (count > 9) {
+				count = 0;
+			}
+		}
+
+		status |= writeToSevenSegment(SEVEN_SEGMENT0, count);
+
+	}
+	return 0;
+
+>>>>>>> 681a133fbe0c4086cbd252b5585aaaac9e4c7253
 }
 */
 //#include <avr/io.h>
