@@ -1,11 +1,11 @@
 /*
-
-
  * main.c
  *
  *  Created on: Nov 10, 2019
  *      Author: Eng Ali Gamal
  */
+/*
+
 #include <avr/io.h>
 #include "util/delay.h"
 #include "LIB/std_types.h"
@@ -54,6 +54,7 @@ int  main(void) {
 	}
 }
 
+*/
 /*int main() {
  initSevenSegment(SEVEN_SEGMENT0);
  controlSevenSegment(SEVEN_SEGMENT0, SEGMENT_ENABLED);
