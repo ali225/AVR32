@@ -10,7 +10,11 @@ RM := rm -rf
 -include sources.mk
 -include MCAL/interupts/src/subdir.mk
 -include MCAL/WDG/subdir.mk
+-include MCAL/UART/subdir.mk
 -include MCAL/Timer/subdir.mk
+-include MCAL/SPI/subdir.mk
+-include MCAL/ICU/subdir.mk
+-include MCAL/I2C/subdir.mk
 -include MCAL/DIO/src/subdir.mk
 -include MCAL/ADC/subdir.mk
 -include HAL/seven/src/subdir.mk

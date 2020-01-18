@@ -29,7 +29,11 @@ HAL/seven/src \
 . \
 MCAL/ADC \
 MCAL/DIO/src \
+MCAL/I2C \
+MCAL/ICU \
+MCAL/SPI \
 MCAL/Timer \
+MCAL/UART \
 MCAL/WDG \
 MCAL/interupts/src \
 
