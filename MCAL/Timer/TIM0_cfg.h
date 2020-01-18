@@ -10,7 +10,7 @@
 
 
 
-#ifndef TIM0_PRIV_H
+//#ifndef TIM0_PRIV_H
 #define TIM0_PRIV_H
 
 
@@ -41,7 +41,7 @@
         1- TIM0_NORMAL_MODE
         2- TIM0_CTC_MODE
 */
-#define TIM0_MODE_SELECT  TIM0_CTC_MODE
+#define TIM0_MODE_SELECT  TIM0_NORMAL_MODE
 
 
 /* Prescaler select:
@@ -60,7 +60,7 @@
 #define TIM0_TCNT0_INIT     0
 
 /* OCR0 init val (0 ----> 255) */
-#define TIM0_OCR0_INIT      128
+#define TIM0_OCR0_INIT      250
 
 
 /* Compare Match Mode Select
@@ -73,7 +73,7 @@
 #define TIM0_COMPARE_MATCH_MODE_SELECT    TIM0_COMPARE_MATCH_NORMAL_MODE
 
 
-#endif
+//#endif
 
 
 
